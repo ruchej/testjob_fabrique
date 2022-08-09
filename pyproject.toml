@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "testjob_fabrique"
+version = "0.1.0"
+description = ""
+authors = ["Aleksandr Vinogradov <lvar-8@ya.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "2.2.10"
+djangorestframework = "^3.13.1"
+gunicorn = "^20.1.0"
+
+[tool.poetry.dev-dependencies]
+django-stubs = "^1.12.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pyright]
+pythonVersion = "3.10.5"
+pythonPlatform = "Linux"
+venv = "testjob-fabrique-quUt_ZRY-py3.10"
+venvPath = "/home/alx/.cache/pypoetry/virtualenvs"
+exclude = [
+    "**/node_modules",
+    "**/__pycache__",
+    ".git",
+]
